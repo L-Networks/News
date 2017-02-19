@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <title>Breaking-News Nachrichten aus aller Welt.</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway|Lobster" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link href="Icon/Favicon/Favicon.png" rel="apple-touch-icon" />
+	    <link href="Icon/Favicon/Favicon.png" rel="apple-touch-icon" sizes="152x152" />
+	    <link href="Icon/Favicon/Favicon.png" rel="apple-touch-icon" sizes="167x167" />
+	    <link href="Icon/Favicon/Favicon.png" rel="apple-touch-icon" sizes="180x180" />
+	    <link href="Icon/Favicon/Favicon.png" rel="shortcut icon" type="image/png" />
+        <link href="Icon/Favicon/Favicon.png" rel="icon" type="image/png" />
+	    <link href="Icon/Favicon/Favicon.png" rel="icon" sizes="192x192" />
+        <link href="Icon/Favicon/Favicon.png" rel="icon" sizes="128x128" />
+
+        <link rel="stylesheet" href="frameworks/animate/animate.css">
+        <link rel="stylesheet" href="frameworks/mdl/material.min.css"> 
+        <link rel="stylesheet" href="frameworks/w3/w3.css">
+
+        <script language="javascript" type="text/javascript" src="frameworks/js/js.js"></script>
+        <script language="javascript" type="text/javascript" src="frameworks/mdl/material.min.js"></script>
+    </head>
+
+
+    <body style="font-family: 'Quicksand';">
+        <!-- Simple header with fixed tabs. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <a href="index.html" style="text-decoration:none">
+                        <span class="mdl-layout-title w3-hover-text-light-grey" style="font-family: 'Lobster', cursive; font-size: 30px;">Breaking-News!</span>
+                    </a>
+                </div>
+                <!-- Tabs -->
+                <div class="mdl-layout__tab-bar mdl-js-ripple-effect w3-hover-shadow">
+                    <a href="#fixed-tab-1" class="mdl-layout__tab is-active w3-hover-text-white">Aktuelles</a>
+                    <a href="#fixed-tab-2" class="mdl-layout__tab w3-hover-text-white">Vor Wochen</a>
+                    <a href="#fixed-tab-3" class="mdl-layout__tab w3-hover-text-white">Vor Monaten</a>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Men&uuml;</span>
+                    <nav class="mdl-navigation">
+                        <a class="mdl-navigation__link w3-hover-cyan w3-hover-text-white" href="">Weltweit</a>
+                        <a class="mdl-navigation__link w3-hover-green" href="">Europa</a>
+                        <a class="mdl-navigation__link w3-hover-purple" href="">Amerika</a>
+                        <a class="mdl-navigation__link w3-hover-pink" onclick="myFunction('Demo3')">Weitere...</a>
+
+                        <div id="Demo3" class="w3-hide w3-center" style="color: grey">
+                            <div class="w3-padding-12 w3-hover-pink w3-hover-text-white">
+                                <a href="index.html" style="text-decoration:none">
+                                  <p class="w3-padding-top">Afrika</p>
+                                </a>
+                            </div>
+                            <div class="w3-padding-12 w3-hover-pink w3-hover-text-white">
+                                <a href="index.html" style="text-decoration:none">
+                                  <p class="w3-padding-top">Antarktika</p>
+                                </a>
+                            </div>
+                            <div class="w3-padding-12 w3-hover-pink w3-hover-text-white">
+                                <a href="index.html" style="text-decoration:none">
+                                  <p class="w3-padding-top">Asien</p>
+                                </a>
+                            </div>
+                            <div class="w3-padding-12 w3-hover-pink w3-hover-text-white">
+                                <a href="index.html" style="text-decoration:none">
+                                  <p class="w3-padding-top">Australien </p>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <hr>
+                        <strike>
+                            <a class="mdl-navigation__link w3-hover-indigo" href="">Unsere App</a>
+                        </strike>
+                        <hr>
+                        <a class="mdl-navigation__link w3-hover-blue" href="">Team</a>
+                        <a class="mdl-navigation__link w3-hover-blue" href="">Impressum</a>
+                    </nav>
+
+            </div>
+            <main class="mdl-layout__content">
+                <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+                    <div class="page-content"><!-- Your content goes here --></div>
+                </section>
+                <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+                    <div class="page-content"><!-- Your content goes here --></div>
+                </section>
+                <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+                    <div class="page-content"><!-- Your content goes here --></div>
+                </section>
+            </main>
+        </div>
+
+
+        <script>
+            function myFunction(id) {
+             var x = document.getElementById(id);
+             if (x.className.indexOf("w3-show") == -1) {
+             x.className += " w3-show";
+                 } else { 
+             x.className = x.className.replace(" w3-show", "");
+                     }
+                }
+        </script>
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+</html>
